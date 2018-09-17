@@ -25,7 +25,7 @@ public class SessionFactoryConfiguration {
 	@Value("${mybatis.mapperLocation}")
 	private String mapperPath;
 	
-	@Resource(name = "dataSource", type = ComboPooledDataSource.class)
+	@Resource(name = "dataSource", type = DataSource.class)
 	private DataSource dataSource;
 	
 	@Value("${mybatis.entityPackage}")

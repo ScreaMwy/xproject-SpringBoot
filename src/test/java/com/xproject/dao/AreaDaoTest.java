@@ -1,4 +1,4 @@
-package com.xproject.dao.impl;
+package com.xproject.dao;
 
 import org.junit.Ignore;
 import org.junit.Assert;

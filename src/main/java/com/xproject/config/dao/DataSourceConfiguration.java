@@ -1,4 +1,4 @@
-package com.xproject.dao.config;
+package com.xproject.config.dao;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

@@ -4,6 +4,11 @@ import java.util.List;
 
 import com.xproject.pojo.Area;
 
+import org.springframework.stereotype.Repository;
+import org.springframework.context.annotation.Scope;
+
+@Repository("areaDao")
+@Scope(scopeName = "singleton")
 public interface AreaDao {
 
 	/**

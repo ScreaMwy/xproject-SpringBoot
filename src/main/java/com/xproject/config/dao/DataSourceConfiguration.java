@@ -3,15 +3,12 @@ package com.xproject.config.dao;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Bean;
-import org.mybatis.spring.annotation.MapperScan;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 import java.beans.PropertyVetoException;
 
 @Configuration
-//配置mybatis的mapper的扫描路径
-@MapperScan("com.xproject.dao")
 public class DataSourceConfiguration {
 	@Value("${jdbc.driver_class}")
 	private String jdbcDriverClass;

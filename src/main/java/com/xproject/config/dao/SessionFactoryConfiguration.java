@@ -1,6 +1,7 @@
 package com.xproject.config.dao;
 
 import org.mybatis.spring.SqlSessionFactoryBean;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -18,6 +19,9 @@ import javax.sql.DataSource;
 import javax.annotation.Resource;
 
 @Configuration
+//配置mybatis的mapper类的扫描路径
+@MapperScan(basePackages = {"com.xproject.dao"})
+@SuppressWarnings({"unused"})
 public class SessionFactoryConfiguration {
 	@Value("${mybatis.configLocation}")
 	private String mybatisConfigFilePath;

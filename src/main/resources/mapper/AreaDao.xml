@@ -10,7 +10,7 @@
 		desc
 	</select>
 	<select id="findAreaById" resultType="com.xproject.pojo.Area" parameterType="java.lang.Integer">
-		select area_id, area_name, priority, create_time, last_edit_time
+		select x_area.area_id, x_area.area_name, x_area.priority, x_area.create_time, x_area.last_edit_time
 		from x_area
 		where area_id = #{areaId}
 	</select>

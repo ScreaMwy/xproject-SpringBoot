@@ -1,4 +1,4 @@
-package com.xproject.dao;
+package com.xproject.testdao;
 
 import org.junit.Ignore;
 import org.junit.Assert;
@@ -29,7 +29,7 @@ public class AreaDaoTest {
 	}
 
 	@Test
-	@Ignore
+//	@Ignore
 	public void testFindAreaById() {
 		Area area = areaDao.findAreaById(1);
 		Assert.assertEquals("广州", area.getAreaName());

@@ -9,7 +9,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>xproject-system Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	<description>Demo project for Spring Boot</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

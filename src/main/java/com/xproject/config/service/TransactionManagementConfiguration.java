@@ -21,11 +21,11 @@ import javax.annotation.Resource;
 public class TransactionManagementConfiguration implements TransactionManagementConfigurer {
 	@Resource(name = "dataSource", type = DataSource.class)
 	private DataSource dataSource;
-	
+
 	@Bean(name = "transactionManager")
 	@Override
 	public PlatformTransactionManager annotationDrivenTransactionManager() {
 		return new DataSourceTransactionManager(dataSource);
 	}
-	
+
 }
